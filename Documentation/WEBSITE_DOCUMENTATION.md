@@ -2,7 +2,6 @@
 
 **Project:** ParkWise AI — AI-Powered Illegal Parking Enforcement Command Center
 **Organisation:** Bengaluru Traffic Police
-**Hackathon Phase:** Phase 3 (Frontend) — complete
 **Dataset:** 298,450 real Bengaluru parking violation records (Nov 2023 – May 2024)
 
 ---
