@@ -37,9 +37,7 @@ from sklearn.impute import SimpleImputer
 # SECTION 1 ── Data Loading & Raw EDA
 # ══════════════════════════════════════════════════════════════════════════════
 
-RAW_DATA_PATH = "/mnt/user-data/uploads/jan_to_may_police_violation_anonymized791b166.csv"
-OUTPUT_DIR    = "/mnt/user-data/outputs"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+
 
 SEED = 42
 np.random.seed(SEED)
@@ -526,6 +524,9 @@ def save_artefacts(best_model, best_name, label_encoder, encoders, pci_scaler, o
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
+    RAW_DATA_PATH = "/mnt/user-data/uploads/jan_to_may_police_violation_anonymized791b166.csv"
+    OUTPUT_DIR    = "/mnt/user-data/outputs"
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     # ── Load & engineer features ────────────────────────────────────────────
     df_raw = load_raw_data(RAW_DATA_PATH)
     df, pci_scaler = build_features(df_raw)
