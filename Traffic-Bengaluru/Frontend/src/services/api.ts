@@ -9,7 +9,7 @@ import type {
 } from '../types';
 
 const api = axios.create({
-  baseURL: 'https://parkwise-ai-production.up.railway.app',
+  baseURL: 'https://parkwise-ai-2cim.onrender.com',
   timeout: 30000,
   headers: { 'Content-Type': 'application/json' },
 });
